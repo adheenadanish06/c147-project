@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene >
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+    <!--Sky-->
+    <a-sky src = "./Window.jpg">
+    </a-sky>
+
+    <a-torus position="0 14 2" color = "grey" rotation=" 100 0 0" radius="15" radius-tubular="3.5"></a-torus>
+
+    <a-cylinder position="0 -14 2" src="./carpet.jpg" rotation=" 0 0 0" radius="17" height="15"></a-cylinder>
+
+    <a-box position = " -12 1 6" height = "15" width = " 30" rotation = " 0 80 0"></a-box>
+
+    <a-box position = " -10 1 0" height = "6" width = " 8" color = "black" rotation = " 0 80 0"></a-box>
+
+    <a-box position = " 10 -4 2" height = "4" width = " 5"  src="./handle.jpg"></a-box>
+
+    <a-box position = " 12 -2 0" height = "7" width = " 5"  src="./handle.jpg" rotation = " 0 90 0 " ></a-box>
+
+    <a-box position = " 10 -4 -1" height = "6" width = " 5" depth = " 3" src = "./handle.jpg" rotation = " 90 0 0 " ></a-box>
+
+    <a-box position = " 10 -4 -4" height = "4" width = " 5"  src= " ./handle.jpg" ></a-box>
+
+    <a-cylinder position = "1 -2 0" radius = "3" src = " table.jpg"></a-cylinder>
+
+    <a-cylinder position = " 1 -4 0" height = "4" radius = " 0.8" src= " table.jpg"></a-cylinder>
+    </a-scene>
+</body>
+
+</html>
